@@ -1,10 +1,10 @@
 # angular-demo
 
 ##项目启动步骤
-1.npm install
-2.npm install -g bower
-3.bower install
-4.gulp
+1. npm install
+2. npm install -g bower
+3. bower install
+4. gulp
 
 ##用户登录信息
 * 登录名:   1@1.cn
