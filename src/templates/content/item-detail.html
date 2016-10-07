@@ -1,0 +1,27 @@
+<div id="page_item_detail" class="wrapper wrapper-content container">
+  <div class="ibox-content">
+    <h4>Item-Detail Page</h4>
+
+    <p>
+      登录用户名:
+      <span>{{globalData.currentUserName}}</span>
+    </p>
+
+    <p>
+      <span>元素id:</span>
+      <span>{{inParams.id}}</span>
+    </p>
+
+    <p>
+      <span>内容:</span>
+      {{data.itemDetail.content}}
+
+      <button class="btn btn-primary block full-width"
+              ng-click="action.isShowItemDesc()">{{data.btnTip}}</button>
+    </p>
+
+    <p ng-if="data.isShowItemDesc">
+      {{data.itemDetail.desc}}
+    </p>
+  </div>
+</div>

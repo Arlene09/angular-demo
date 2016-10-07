@@ -1,0 +1,19 @@
+<div id="page_main" class="wrapper wrapper-content container">
+  <div class="ibox-content" ng-if="globalData.isLoginState">
+
+    <p>
+      Hello <span>{{globalData.currentUserName}}</span>,
+
+      This is Main Page~
+    </p>
+
+    <ul ng-repeat="item in data.ListData">
+      <li class="pointer" ui-sref="index.item-detail({params:{id:item.id}})">{{item.name}}</li>
+    </ul>
+  </div>
+  <p class="text-center top_50" ng-if="!globalData.isLoginState">请先登录~</p>
+</div>
+
+
+
+

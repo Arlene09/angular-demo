@@ -1,0 +1,15 @@
+<div class="text-center" ng-controller="LogOutCtrl">
+
+  <h3>angulr-demo</h3>
+
+  <p>
+    <a ng-if="globalData.isLoginState" ng-click="action.toLogOut()">
+      <i class="fa fa-sign-out"></i> 退出登录
+    </a>
+  </p>
+  <p>
+    <a ng-if="!globalData.isLoginState" ui-sref="index.login">
+      <i class="fa fa-sign-out"></i> 登录
+    </a>
+  </p>
+</div>
